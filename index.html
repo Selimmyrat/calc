@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr class="output">
+                <td colspan="4" class="current-operand"><input id="result" value='' type="text"></td>
+            </tr>
+            <tr>
+                <td class="box remove" colspan="2" value="c" onkeydown="" onclick="clr()">c</td>
+                <td class="box plus" colspan="1" value="/" onclick="display('/')">/</td>
+                <td class="box plus" colspan="1" value="*" onclick="display('*')">*</td>
+            </tr>
+            <tr>
+                <td class="box" colspan="1" value="7" onclick="display('7')">7</td>
+                <td class="box" colspan="1" value="8" onclick="display('8')">8</td>
+                <td class="box" colspan="1" value="9" onclick="display('9')">9</td>
+                <td class="box plus" colspan="1" value="-" onclick="display('-')">-</td>
+            </tr>
+            <tr>
+                <td class="box" colspan="1" value="4" onclick="display('4')">4</td>
+                <td class="box" colspan="1" value="5" onclick="display('5')">5</td>
+                <td class="box" colspan="1" value="6" onclick="display('6')">6</td>
+                <td class="box plus" colspan="1" value="+" onclick="display('+')">+</td>
+            </tr>
+            <tr>
+                <td class="box" colspan="1" value="1" onclick="display('1')">1</td>
+                <td class="box" colspan="1" value="2" onclick="display('2')">2</td>
+                <td class="box" colspan="1" value="3" onclick="display('3')">3</td>
+                <td class="box equal" rowspan="2" value="=" onclick="equal()">=</td>
+            </tr>
+            <tr>
+                <td class="box" colspan="2" value="0" onclick="display('0')">0</td>
+                <td class="box" colspan="1" value="point" onclick="display('.')">.</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- <input type="number" id="box1">
+    <select id="operators">
+        <option value="+" selected>+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="*">*</option>
+    </select>
+    <input type="number" id="box2">
+    <button onclick="calc()">=</button>
+    <input type="number" id="result"> -->
+
+    <script src="main.js"></script>
+</body>
+</html>

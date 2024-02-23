@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input{
+    margin: 10px;
+    padding: 10px;
+}
+button{
+    padding: 10px;
+}
+select{
+    padding: 10px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #DAF0FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 400px;
+    background-color: #17181A;
+    display: flex;
+    border-radius: 25px;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-spacing: 18px;
+}
+
+td {
+    padding: 20px;
+    color: #29A8FF;
+    background-color: #303136;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.box{
+    text-align: center;
+    cursor: pointer;
+}
+
+.equal {
+    background-color: #1991FF;
+    color: #B2DAFF;
+}
+
+.plus {
+    background-color: #005DB2;
+    color: #339DFF;
+}
+
+.remove{
+    background-color: #616161;
+    color: #A5A5A5;
+}
+
+.output{
+    max-width: 100%;
+    margin-right: 25px;
+    color: #fff;
+    padding: 45px 0px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+.output .current-operand{
+    max-width: 100%;
+    height: 70px;
+    padding: 0;
+}
+
+#result{
+    width: 100%;
+    height: 100%;
+    background: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    padding: 0 0 0 10px;
+    font-size: 2rem;
+    box-shadow: none;
+    border: none;
+}
